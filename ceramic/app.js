@@ -128,7 +128,7 @@ $('#mail-message').val("\nCustomer Details:"+"\n"+"Name:"+$('#name_input').val()
 
 
       $.ajax({
-    url: "php-mailer.php",
+    url: "../php-mailer.php",
     type: "POST",
     //data:{'date':$highlighted_date,'time':loan_first_time,'sec_block':loan_sec_time,'third_block':loan_third_time,'user_id':$booked_user_id,'zone':$located_at,'loan_doc_or_rest':$loan_doc_or_rest},
     success: function(data){
