@@ -119,7 +119,7 @@ var messageString = $('#name_input').val();
 
 $('#mail-message').val("\nCustomer Details:"+"\n"+"Name:"+$('#name_input').val()+"\n"+"Email:"+$('#email_input').val()+"\n"+"Phone:"+$('#phone_input').val()+"\n"+"Address:"+$('#address_input').val()+productString);
 
- //c_name,c_email,c_phone,c_address;
+ var c_name,c_email,c_phone,c_address;
 
 c_name = $('#name_input').val();
 c_email = $('#email_input').val();
