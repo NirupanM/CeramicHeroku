@@ -52,6 +52,31 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     $pdf->Ln($lineBreak);
     $pdf->Write(3,$address);
 
+    $p1H="",$p2H="",$p3H="",$p4H="",$p5H="",$p6H="",$p7H="",$p8H="",$p9H="",$p10H="",$p11H="",$p12H="",$p13H="";
+
+    if($p1==1){
+        $p1H = '<tr>
+    <td>Product #1 </td>
+    <td> </td>
+    <td> </td>
+    <td></td>
+    </tr>
+    <tr>
+    <td><img src="ceramicphotos/pic1.jpg"> </td>
+    <td> </td>
+    <td> </td>
+    <td></td>
+    </tr>
+        <tr>
+    <td>US $25 </td>
+    <td> </td>
+    <td> </td>
+    <td></td>
+    </tr>';
+
+    }
+
+
 
     // echo $cart_data;
     // echo $name;
@@ -118,35 +143,30 @@ try {
     <th></th>
     </tr>
     <tr>
-    <td> Name: '.$name.'</td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-    </tr>
-    <tr>
-    <td> </td>
-    <td> Email: '.$email.'</td>
+    <td> Name: </td>
+    <td> '.$name.'</td>
     <td> </td>
     <td> </td>
     </tr>
     <tr>
+    <td> Email: </td>
+    <td> '.$email.'</td>
     <td> </td>
-    <td> </td>
-    <td> Phone: '.$phone.'</td>
     <td> </td>
     </tr>
     <tr>
+    <td> Phone: </td>
+    <td> '.$phone.'</td>
     <td> </td>
     <td> </td>
-    <td> </td>
-    <td> Address: '.$address.'</td>
     </tr>
     <tr>
+    <td>Address: </td>
+    <td>'.$address.' </td>
     <td> </td>
-    <td> </td>
-    <td> </td>
-    <td>'.$p1.'</td>
+    <td>  </td>
     </tr>
+    '.$p1H.'
     </table>
     </body>
     </html>';
