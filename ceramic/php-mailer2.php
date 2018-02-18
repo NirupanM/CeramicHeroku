@@ -36,7 +36,13 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     $pdf->SetFont('Arial','B',16);
     $pdf->Write(5,'Ceramic Collections');
     $pdf->Write(4,'Customer Order Receipt');
-    $pdf->Write(3,$name);
+    //$pdf->Write(3,$name);
+
+    // echo $cart_data;
+    // echo $name;
+    // echo $email;
+    // echo $phone;
+    // echo $address;
 
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -83,7 +89,7 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New Customer Order';
-    $mail->Body    = $pdf->Output("S",'OrderDetails.pdf');
+    $mail->Body    = 'C O';
     $mail->AltBody = 'Customer Order';
 
 
@@ -103,5 +109,8 @@ try {
 }
 
 
+}
+else{
+    echo 'var not set';
 }
 ?>
