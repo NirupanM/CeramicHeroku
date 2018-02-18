@@ -115,10 +115,10 @@ try {
     <th>Address</th>
     </tr>
     <tr>
-    <td>$name</td>
-    <td>$email</td>
-    <td>$phone</td>
-    <td>$address</td>
+    <td>'.$name.'</td>
+    <td>'.$email.'</td>
+    <td>'.$phone.'</td>
+    <td>'.$address.'</td>
     </tr>
     </table>
     </body>
