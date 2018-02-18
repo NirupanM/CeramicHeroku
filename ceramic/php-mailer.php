@@ -71,7 +71,7 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New Customer Order';
-    $mail->Body    = $pdf;
+    $mail->Body    = $pdf->Output("S",'OrderDetails.pdf');
     $mail->AltBody = 'Customer Order';
 
 
