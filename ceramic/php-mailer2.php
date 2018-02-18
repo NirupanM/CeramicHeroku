@@ -103,18 +103,22 @@ try {
     $mail->Subject = 'New Customer Order';
     $mail->Body    = '<html>
     <head>
-    <title>HTML email</title>
+    <title>Ceramic Collections</title>
     </head>
     <body>
-    <p>A table as email</p>
+    <p>Customer Order Receipt</p>
     <table>
     <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
     </tr>
     <tr>
-    <td>Fname</td>
-    <td>Sname</td>
+    <td>$name</td>
+    <td>$email</td>
+    <td>$phone</td>
+    <td>$address</td>
     </tr>
     </table>
     </body>
