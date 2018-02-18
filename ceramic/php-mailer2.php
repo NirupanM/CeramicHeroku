@@ -34,6 +34,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
                 $phone = $_POST["phone"];
                     $address = $_POST["address"];
 
+    $lineBreak = 2;
     $pdf = new FPDF();
     $pdf->AddPage();
     $pdf->SetFont('Arial','B',16);
@@ -43,7 +44,11 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     $pdf->Ln($lineBreak);
     $pdf->Write(3,$name);
     $pdf->Ln($lineBreak);
-    $pdf->Write(3,$name);
+    $pdf->Write(3,$email);
+    $pdf->Ln($lineBreak);
+    $pdf->Write(3,$phone);
+    $pdf->Ln($lineBreak);
+    $pdf->Write(3,$address);
 
     // echo $cart_data;
     // echo $name;
