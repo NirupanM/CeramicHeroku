@@ -1,7 +1,8 @@
-<?php
+ <?php
 
-// require __DIR__ . '/PHPMailer/autoload.php';
-
+// // require __DIR__ . '/PHPMailer/autoload.php';
+//  require('lib/FPDF/fpdf.php');
+ require __DIR__ . '/fpdf181/fpdf.php';
 require __DIR__ . '/PHPMailer/src/Exception.php';
 require __DIR__ . '/PHPMailer/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer/src/SMTP.php';
@@ -19,6 +20,13 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
 
 //$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 
+ 
+    // require 'lib/PHPMailer/PHPMailerAutoload.php';
+    $pdf = new FPDF();
+    $pdf->AddPage();
+    $pdf->SetFont('Arial','B',16);
+    $pdf->Write(5,'Hello India');
+
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
@@ -30,7 +38,9 @@ try {
     $mail->Username = 'nirupan119@gmail.com';                 // SMTP username
     $mail->Password = 'PassTest123';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->Port = 587; 
+
+                                       // TCP port to connect to
 
     //Recipients
     $mail->setFrom('nirupan119@gmail.com', 'Customer Notification');
@@ -63,6 +73,15 @@ try {
     $mail->Subject = 'New Customer Order';
     $mail->Body    = 'Customer Order';
     $mail->AltBody = 'Customer Order';
+
+
+
+// $mail->Subject   = $subject;
+//     $mail->Body      = $body;
+//     $mail->AddAddress($emails);
+    $mail->addStringAttachment($pdf->Output("S",'OrderDetails.pdf'), 'OrderDetails.pdf', $encoding = 'base64', $type = 'application/pdf');
+    //return $mail->Send();
+
 
     $mail->send();
     echo 'Message has been sent';
