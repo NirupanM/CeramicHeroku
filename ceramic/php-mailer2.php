@@ -60,18 +60,6 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td> </td>
     <td> </td>
     <td></td>
-    </tr>
-    <tr>
-    <td><img src="ceramicphotos/pic1.jpg"> </td>
-    <td> </td>
-    <td> </td>
-    <td></td>
-    </tr>
-        <tr>
-    <td>US $25 </td>
-    <td> </td>
-    <td> </td>
-    <td></td>
     </tr>';
 
     }
