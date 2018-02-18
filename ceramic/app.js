@@ -14,7 +14,9 @@ $(document).ready(function() {
 
 $("#proceed-btn").click(function(){
 
-var url = "https://nirupanm.github.io/Ceramic/checkout/form-submission.html";
+// var url = "https://nirupanm.github.io/Ceramic/checkout/form-submission.html";
+
+var url ="https://ceramiccollections.herokuapp.com/checkout/form-submission.html";
 window.location = url;
 window.location.replace (url);
 
@@ -505,7 +507,9 @@ $(".cart-section").click(function(){
 
 if(window.sessionStorage["itemscart"].length>0){
      //var url = "file:///C:/github/ceramic/checkout/checkout.html";
-    var url = "https://nirupanm.github.io/Ceramic/checkout/checkout.html";
+    //var url = "https://nirupanm.github.io/Ceramic/checkout/checkout.html";
+
+    var url = "https://ceramiccollections.herokuapp.com/checkout/checkout.html";
 window.location = url;
 window.location.replace (url);
     // history.pushState({}, "", "file:///C:/github/ceramic/");
