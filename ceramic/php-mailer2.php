@@ -52,15 +52,12 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     $pdf->Ln($lineBreak);
     $pdf->Write(3,$address);
 
-    $p1H="",$p2H="",$p3H="",$p4H="",$p5H="",$p6H="",$p7H="",$p8H="",$p9H="",$p10H="",$p11H="",$p12H="",$p13H="";
+    $p1T="",$p2T="",$p3T="",$p4T="",$p5T="",$p6T="",$p7T="",$p8T="",$p9T="",$p10T="",$p11T="",$p12T="",$p13T="";
+    $p1I="",$p2I="",$p3I="",$p4I="",$p5I="",$p6I="",$p7I="",$p8I="",$p9I="",$p10I="",$p11I="",$p12I="",$p13I="";
 
     if($p1==1){
-        $p1H = '<tr>
-    <td>Product #1 </td>
-    <td> </td>
-    <td> </td>
-    <td></td>
-    </tr>';
+        $p1T = 'Product #1';
+        $p1I = 'Image 1';
 
     }
 
@@ -154,7 +151,53 @@ try {
     <td> </td>
     <td>  </td>
     </tr>
-    '.$p1H.'
+    <tr>
+    <td>'.$p1T.' </td>
+    <td> </td>
+    <td> </td>
+    <td>  </td>
+    </tr>
+    
+    </table>
+
+    <table>
+    <tr>
+    <th>'.$p1T.'</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    </tr>
+    <tr>
+    <td> '.$p1I.'  </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>  </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td>  </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>  </td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>  </td>
+    </tr>
+    
     </table>
     </body>
     </html>';
