@@ -26,13 +26,15 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     //if (isset($_POST["cart-data"])&&
 
 
-        if(isset($_POST["cart-data"])&&isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])) {
+        if(isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])&&isset($_POST["p1"])&&isset($_POST["p2"])&&isset($_POST["p3"])&&isset($_POST["p4"])&&isset($_POST["p5"])&&isset($_POST["p6"])&&isset($_POST["p7"])&&isset($_POST["p8"])&&isset($_POST["p9"])&&isset($_POST["p10"])&&isset($_POST["p11"])&&isset($_POST["p12"])&&isset($_POST["p13"])) {
 
     $cart_data = $_POST["cart_data"];
         $name = $_POST["name"];
             $email = $_POST["email"];
                 $phone = $_POST["phone"];
                     $address = $_POST["address"];
+
+                    $p1 = $_POST["p1"];$p2 = $_POST["p2"];$p3 = $_POST["p3"];$p4 = $_POST["p4"];$p5 = $_POST["p5"];$p6 = $_POST["p6"];$p7 = $_POST["p7"];$p8 = $_POST["p8"];$p9 = $_POST["p9"];$p10 = $_POST["p10"];$p11 = $_POST["p11"];$p12 = $_POST["p12"];$p13 = $_POST["p13"];
 
     $lineBreak = 2;
     $pdf = new FPDF();
@@ -49,6 +51,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     $pdf->Write(3,$phone);
     $pdf->Ln($lineBreak);
     $pdf->Write(3,$address);
+
 
     // echo $cart_data;
     // echo $name;
@@ -137,6 +140,12 @@ try {
     <td> </td>
     <td> </td>
     <td> Address: '.$address.'</td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>'.$p1.'</td>
     </tr>
     </table>
     </body>

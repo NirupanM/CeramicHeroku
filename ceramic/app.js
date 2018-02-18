@@ -33,6 +33,7 @@ var cartArray = window.sessionStorage["itemscart"];
     var submit_total = 0;
     var productString="\nProducts placed for order:";
     var splitString = cartArray.split(",");
+    var c1=0, c2=0, c3=0,c4=0,c5=0,c6=0,c7=0,c8=0,c9=0,c10=0,c11=0,c12=0,c13=0;
     console.log(splitString);
     cartArray = splitString;
     //for (var i = 0; i < cartArray.length; i++) {
@@ -43,58 +44,71 @@ var cartArray = window.sessionStorage["itemscart"];
     if(cartArray[i]=="1"){
         productString = productString+"\nProduct Name:Product 1"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c1 = 1;
     }
 
     if(cartArray[i]=="2"){
         productString = productString+"\nProduct Name:Product 2"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c2=1;
     }
 
     if(cartArray[i]=="3"){
         productString = productString+"\nProduct Name:Product 3"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c3 = 1;
     }
 
     if(cartArray[i]=="4"){
         productString = productString+"\nProduct Name:Product 4"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c4 = 1;
     }
 
     if(cartArray[i]=="5"){
         productString = productString+"\nProduct Name:Product 5"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c5 = 1;
     }
     if(cartArray[i]=="6"){
         productString = productString+"\nProduct Name:Product 6"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c6 = 1;
     }
     if(cartArray[i]=="7"){
         productString = productString+"\nProduct Name:Product 7"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c7 = 1;
     }
     if(cartArray[i]=="8"){
         productString = productString+"\nProduct Name:Product 8"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c8 = 1;
     }
     if(cartArray[i]=="9"){
         productString = productString+"\nProduct Name:Product 9"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c9 = 1;
     }
     if(cartArray[i]=="10"){
         productString = productString+"\nProduct Name:Product 10"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c10 = 1;
     }
     if(cartArray[i]=="11"){
         productString = productString+"\nProduct Name:Product 11"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c11 = 1;
     }
     if(cartArray[i]=="12"){
         productString = productString+"\nProduct Name:Product 12"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c12 = 1;
     }
     if(cartArray[i]=="13"){
         productString = productString+"\nProduct Name:Product 13"+"\nPrice:US$25";
         submit_sub_total = submit_sub_total + 25;
+        c13 = 1;
     }
     }
 
@@ -126,7 +140,7 @@ c_email = $('#email_input').val();
 c_phone = $('#phone_input').val();
 c_address = $('#address_input').val();
 
-items_cart = JSON.stringify(window.sessionStorage["items_cart"]);
+//items_cart = JSON.stringify(window.sessionStorage["items_cart"]);
 
 
 /*$('#mail-message').val(('#mail-message').val()+productString);
@@ -136,8 +150,7 @@ items_cart = JSON.stringify(window.sessionStorage["items_cart"]);
       $.ajax({
     url: "../php-mailer2.php",
     type: "POST",
-    dataType:"json",
-    data: {'cart_data':items_cart,'name':c_name,'email':c_email,'phone':c_phone,'address':c_address},
+    data: {'name':c_name,'email':c_email,'phone':c_phone,'address':c_address,'p1':c1,'p2':c2,'p3':c3,'p4':c4,'p5':c5,'p6':c6,'p7':c7,'p8':c8,'p9':c9,'p10':c10,'p11':c11,'p12':c12,'p13':c13},
     success: function(data){
         console.log(data);
 
