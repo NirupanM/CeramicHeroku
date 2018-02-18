@@ -136,7 +136,7 @@ items_cart = window.sessionStorage["items_cart"];
       $.ajax({
     url: "../php-mailer2.php",
     type: "POST",
-    data: {'name':c_name},
+    data: {'name':c_name,'email':c_email,'phone':c_phone,'address':c_address},
     success: function(data){
         console.log(data);
 

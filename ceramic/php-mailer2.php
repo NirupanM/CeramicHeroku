@@ -23,19 +23,26 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
  
     // require 'lib/PHPMailer/PHPMailerAutoload.php';
 
-    if (isset($_POST["name"])) {
+    //if (isset($_POST["cart-data"])&&
 
-    // $cart_data = $_POST["cart_data"];
+
+        if(isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])) {
+
+    $cart_data = $_POST["cart_data"];
         $name = $_POST["name"];
-            // $email = $_POST["email"];
-            //     $phone = $_POST["phone"];
-            //         $address = $_POST["address"];
+            $email = $_POST["email"];
+                $phone = $_POST["phone"];
+                    $address = $_POST["address"];
 
     $pdf = new FPDF();
     $pdf->AddPage();
     $pdf->SetFont('Arial','B',16);
     $pdf->Write(5,'Ceramic Collections');
+    $pdf->Ln($lineBreak);
     $pdf->Write(4,'Customer Order Receipt');
+    $pdf->Ln($lineBreak);
+    $pdf->Write(3,$name);
+    $pdf->Ln($lineBreak);
     $pdf->Write(3,$name);
 
     // echo $cart_data;
@@ -89,7 +96,24 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New Customer Order';
-    $mail->Body    = 'C O';
+    $mail->Body    = '<html>
+    <head>
+    <title>HTML email</title>
+    </head>
+    <body>
+    <p>A table as email</p>
+    <table>
+    <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    </tr>
+    <tr>
+    <td>Fname</td>
+    <td>Sname</td>
+    </tr>
+    </table>
+    </body>
+    </html>';
     $mail->AltBody = 'Customer Order';
 
 
