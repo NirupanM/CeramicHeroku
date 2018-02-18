@@ -23,20 +23,20 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
  
     // require 'lib/PHPMailer/PHPMailerAutoload.php';
 
-    if (isset($_POST["cart-data"])&&isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])) {
+    if (isset($_POST["name"])) {
 
-    $cart_data = $_POST["cart_data"];
+    // $cart_data = $_POST["cart_data"];
         $name = $_POST["name"];
-            $email = $_POST["email"];
-                $phone = $_POST["phone"];
-                    $address = $_POST["address"];
+            // $email = $_POST["email"];
+            //     $phone = $_POST["phone"];
+            //         $address = $_POST["address"];
 
     $pdf = new FPDF();
     $pdf->AddPage();
     $pdf->SetFont('Arial','B',16);
     $pdf->Write(5,'Ceramic Collections');
     $pdf->Write(4,'Customer Order Receipt');
-    //$pdf->Write(3,$name);
+    $pdf->Write(3,$name);
 
     // echo $cart_data;
     // echo $name;

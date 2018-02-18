@@ -121,12 +121,12 @@ $('#mail-message').val("\nCustomer Details:"+"\n"+"Name:"+$('#name_input').val()
 
  //c_name,c_email,c_phone,c_address;
 
-$c_name = $('#name_input').val();
-$c_email = $('#email_input').val();
-$c_phone = $('#phone_input').val();
-$c_address = $('#address_input').val();
+c_name = $('#name_input').val();
+c_email = $('#email_input').val();
+c_phone = $('#phone_input').val();
+c_address = $('#address_input').val();
 
-$items_cart = window.sessionStorage["items_cart"];
+items_cart = window.sessionStorage["items_cart"];
 
 
 /*$('#mail-message').val(('#mail-message').val()+productString);
@@ -136,7 +136,7 @@ $items_cart = window.sessionStorage["items_cart"];
       $.ajax({
     url: "../php-mailer2.php",
     type: "POST",
-    data: {'cart-data':$items_cart,'name':$c_name,'email':$c_email,'phone':$c_phone,'address':$c_address},
+    data: {'name':c_name},
     success: function(data){
         console.log(data);
 
