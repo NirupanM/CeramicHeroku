@@ -104,8 +104,8 @@ var cartArray = window.sessionStorage["itemscart"];
 
 
     productString = productString+"\nSub Total: US $"+submit_sub_total;
-        productString = productString+"\nShipping: US $"+submit_shipping;
-            productString = productString+"\nTotal: US $"+submit_total;
+    productString = productString+"\nShipping: US $"+submit_shipping;
+    productString = productString+"\nTotal: US $"+submit_total;
 
 
 
@@ -126,7 +126,7 @@ c_email = $('#email_input').val();
 c_phone = $('#phone_input').val();
 c_address = $('#address_input').val();
 
-items_cart = window.sessionStorage["items_cart"];
+items_cart = JSON.stringify(window.sessionStorage["items_cart"]);
 
 
 /*$('#mail-message').val(('#mail-message').val()+productString);
@@ -136,7 +136,8 @@ items_cart = window.sessionStorage["items_cart"];
       $.ajax({
     url: "../php-mailer2.php",
     type: "POST",
-    data: {'name':c_name,'email':c_email,'phone':c_phone,'address':c_address},
+    dataType:"json",
+    data: {'cart_data':items_cart,'name':c_name,'email':c_email,'phone':c_phone,'address':c_address},
     success: function(data){
         console.log(data);
 

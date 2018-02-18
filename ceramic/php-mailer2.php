@@ -26,7 +26,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     //if (isset($_POST["cart-data"])&&
 
 
-        if(isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])) {
+        if(isset($_POST["cart-data"])&&isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["phone"])&&isset($_POST["address"])) {
 
     $cart_data = $_POST["cart_data"];
         $name = $_POST["name"];
@@ -109,16 +109,34 @@ try {
     <p>Customer Order Receipt</p>
     <table>
     <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
     </tr>
     <tr>
-    <td>'.$name.'</td>
-    <td>'.$email.'</td>
-    <td>'.$phone.'</td>
-    <td>'.$address.'</td>
+    <td> Name: '.$name.'</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> Email: '.$email.'</td>
+    <td> </td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td> Phone: '.$phone.'</td>
+    <td> </td>
+    </tr>
+    <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Address: '.$address.'</td>
     </tr>
     </table>
     </body>
