@@ -1,0 +1,604 @@
+
+
+
+
+body {
+/*     background-color: #263238 !important;*/
+
+background-color: white !important;
+
+/*background-image: url('ceramicphotos/pot-crop.gif');*/
+/*background-repeat: no-repeat;
+background-size: cover;*/   
+}    
+
+#img-logo{
+width: 12%;
+    height: 9%;
+    max-width: 12%;
+    vertical-align: top;
+    margin-top: -2%;
+    margin-left: 123%;
+}
+
+#img-cart{
+  width: 8%;
+    /* float: right; */
+        margin-left: 240%;
+    margin-top: -10%;
+}
+
+#caption-count{
+margin-left: -30%;
+    margin-top: -77%;
+    font-size: x-large;
+    font-weight: bolder;
+    color: lightgrey;
+}
+
+.caption-count-realign{
+/*  margin-left: -109%;*/
+}
+
+#cart-count-title{
+  width: 8%;
+    /* float: right; */
+        margin-left: 240%;
+    margin-top: -13%;
+}
+
+#logo-title{
+  margin-left: 72%;
+}
+
+#web-nav{
+  margin-left: -28%;
+}
+
+#pinBoot {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+#pdfViewer {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.white-panel {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  /*padding: 10px;*/
+  border-radius: 7%;
+}
+.img-border{
+  border-radius: 7%;
+}
+/*
+stylize any heading tags withing white-panel below
+*/
+
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: relative;
+    width: 100%;
+    height: 360px;
+  }
+
+  .carousel-inner {
+    border-radius: 0px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: right;
+  }
+
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+  }*/
+
+  /*#carousel-example-generic2{
+height: 350px;
+    width: 45%;
+    margin-left: 14%;
+  }
+
+  #carousel-example-generic{
+height: 350px;
+    width: 45%;
+    margin-left: 64%;
+    margin-top: -30.7%;
+  }
+*/
+    #carousel-example-generic{
+height: 350px;
+width: 115%;
+    margin-left: -7%;
+    max-height: 350px;
+  }
+
+  .carousel-images{
+    height: 350px !important;
+  }
+
+  .container{
+
+  }
+
+  .img-br{
+    border-radius: 7%;
+    cursor: pointer;
+  }
+
+
+#left-arrow{
+margin-left: -50%;
+}
+
+#right-arrow{
+margin-right:  -50%;
+}
+
+#filter-menu{
+  margin-top: -1.5%;
+}
+
+.img-ant{
+  width:15%;
+  z-index: 100;
+/*  margin-top:-65%;*/
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+.span-img{
+  
+}
+
+.img-cart{
+/*  float: right;*/
+}
+
+
+.recommended_h2{
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
+  }
+
+#cart-add{
+  width: 20%;
+  margin-top: 5%;
+/*  margin-left: 106%;
+    width: 92%;
+    margin-top: -113%;*/
+}  
+
+#customize{
+width: 20%;
+    height: 48px;
+    margin-top: 5%;
+    /* font-weight: bolder; */
+    font-size: medium;
+    font-family: "Times New Roman";
+}  
+
+#quantity-group{
+margin-top: 4%;
+}
+
+#dropdown-menu-scroll{
+  overflow-y: auto;
+    height: 109px;
+}
+
+.cart-section{
+  cursor: pointer;
+}
+
+#shopping-title{
+/*  margin-top: -6%;
+    margin-left: 9%;
+    color: silver;
+    font-weight: 100;
+    font-size: -webkit-xxx-large;
+    font-family: "Stardos Stencil";*/
+    /*margin-top: -6%;
+    margin-left: 8%;
+    color: black;
+    font-weight: 100;
+    font-size: -webkit-xxx-large;
+    text-decoration: underline;
+    font-family: "Stardos Stencil";*/
+    margin-top: -6%;
+    margin-left: 0%;
+    font-size: 2.4rem;
+ /*   color: black;
+    font-weight: 100;*/
+}
+
+.checkout-img{
+width: 51%;
+    height: 47%;
+    margin-left: 23%;
+  }
+
+  .checkout-font-family{
+    font-family: "Verdana";
+  }
+
+  .checkout-index-col{
+    margin-top: 239%;
+    font-weight: 700;
+  }
+
+  .checkout-img-test{
+
+/*    margin-left: 1%;
+    width: 42%;*/
+
+margin-left: 0%;
+
+/* width: 83%; */
+
+/* height: 34%; */
+
+margin-top: 3%;
+
+margin-bottom: 3%;
+}
+
+  .checkout-prod-image-title{
+
+/*    margin-left:  60%;
+    margin-top:  -32%;
+    font-weight: 700;*/
+
+/*    margin-left: 47%;
+    margin-top: -30%;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: "Arial,sans-serif";*/
+
+margin-left: -265%;
+
+margin-top: 25%;
+
+font-weight: 700;
+
+font-size: 1.9rem;
+
+color: cornflowerblue;
+}
+
+.checkout-prod-image-desc{
+      /*margin-left: 60%;
+    margin-top: 9%;*/
+      margin-left: -263%;
+      margin-top: 24%;
+      font-weight: 600;
+      /* width: 47%; */
+      font-family: "Arial,sans-serif";
+      /* color: cornflowerblue; */
+  }
+
+  .checkout-qty-col{
+    /* margin-top: 201%; */
+    font-weight: 700;
+    margin-left: -267%;
+    margin-top: 105%;
+    /* margin-left: -1451%; */
+  }
+
+  .checkout-price-col{
+  margin-top: 105%;
+    font-weight: 700;
+    margin-left: -209%;
+
+  }
+
+.checkout-total-price-col{/* margin-top: 256%; */
+  font-weight: 700;margin-top: 107%;margin-left: -146%;}
+
+.checkout-close{
+    /*  margin-left: 18%;
+    margin-top: -16%;*/
+    margin-left: 28%;
+    margin-top: -13%;
+    }
+
+.cart-table{
+  margin-top: -2%;
+}
+
+.items-in-your-cart-image{
+width: 6%;
+    margin-left: 22%;
+    margin-top: -9%;
+  }
+
+    #checkouttable2 tr { border: none;
+    border-bottom: none; }
+
+    .sub-total-label{
+/*      margin-left: 84% !important;*/
+    /*margin-left: : 630px;*/
+    padding-left: 618px;
+    font-size: medium;
+
+    /*font-weight: 700;*/
+    }
+        .shipping-label{
+/*      margin-left: 84% !important;*/
+/*width: 673px;*/
+ padding-left: 618px;
+    font-size: medium;
+    /*font-weight: 700;*/
+    }
+        .total-label{
+/*      margin-left: 84% !important;*/
+/*width: 673px;*/
+ padding-left: 618px;
+    font-size: medium;
+    font-weight: 700;
+    }
+
+    #sub-total-value{
+    
+/*    font-size: medium;*/
+     /* font-weight: 700;*/
+    }
+
+    #shipping-value{
+    
+/*    font-size: medium;*/
+     /* font-weight: 700;*/
+    }
+
+    #total-value{
+/*     font-size: medium;*/
+      font-weight: 700;
+    }
+
+    .product-page-margin-bottom{
+  margin-bottom: 7%;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  #checkouttable1
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #checkouttable1 thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  #checkouttable1 tr { border: 1px solid #ccc; }
+  
+  #checkouttable1 td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  #checkouttable1 td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+
+
+
+
+  .checkout-img-test{
+    margin-left: -34%;
+    width: 144%;
+  }
+
+    .checkout-prod-image-title{
+
+
+
+
+margin-top: 0%;
+    margin-left: 0%;
+font-weight: 700;
+
+font-size: 1.9rem;
+
+color: cornflowerblue;
+}
+
+.checkout-prod-image-desc{
+
+
+    margin-left: 0%;
+      margin-top: 6%;
+      font-weight: 600;
+      width: 47%;
+      font-family: "Arial,sans-serif";
+
+  }
+
+  .checkout-qty-col{
+
+    font-weight: 700;
+    margin-top: 0%;
+    margin-left: 0%;
+
+
+  }
+
+  .checkout-price-col{
+
+    font-weight: 700;
+    margin-top: 0%;
+    margin-left: 0%;
+
+  }
+
+.checkout-total-price-col{/* margin-top: 256%; */
+  font-weight: 700;
+  margin-top: 0%;
+    margin-left: 0%;
+
+}
+
+.checkout-close{
+  margin-top: 0%;
+    margin-left: 0%;
+    /*  margin-left: 18%;
+    margin-top: -16%;*/
+ /*   margin-left: 156%;
+    margin-top: -13%;*/
+    }
+
+
+    #checkouttable2
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #checkouttable2 thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  #checkouttable2 tr { border: 1px solid #ccc; }
+  
+  #checkouttable2 td { 
+/*    width: 100%;*/
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 0px; 
+    position: relative;
+    padding-left: 50%; 
+  }
+  
+  #checkouttable2 td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+
+.items-in-your-cart-image{
+    width: 14%;
+    margin-left: 64%;
+    margin-top: -21%;
+  }
+
+
+
+    .sub-total-label{
+/*      margin-left: 84% !important;*/
+    /*margin-left: : 630px;*/
+    padding-left: 160px;
+    font-size: small;
+
+    /*font-weight: 700;*/
+    }
+        .shipping-label{
+/*      margin-left: 84% !important;*/
+/*width: 673px;*/
+ padding-left: 160px;
+font-size: small;
+    /*font-weight: 700;*/
+    }
+        .total-label{
+/*      margin-left: 84% !important;*/
+/*width: 673px;*/
+ padding-left: 160px;
+    font-size: small;
+    font-weight: 700;
+    }
+
+    #sub-total-value{
+    
+    font-size: small;
+     padding-left: 160px;
+     /* font-weight: 700;*/
+    }
+
+    #shipping-value{
+    
+    font-size: small;
+     padding-left: 160px;
+     /* font-weight: 700;*/
+    }
+
+    #total-value{
+       padding-left: 160px;
+     font-size: small;
+      font-weight: 700;
+    }
+
+    .checkout-close{
+margin-left: 76%;
+    margin-top: -421%;
+  }
+
+}

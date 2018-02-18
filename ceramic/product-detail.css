@@ -1,0 +1,303 @@
+
+/* variable */
+
+$brand-default: #B0BEC5;
+$brand-primary: #2196F3;
+$brand-secondary: #323a45;
+$brand-success: #64DD17;
+$brand-warning: #FFD600;
+$brand-info: #29B6F6;
+$brand-danger: #ef1c1c;
+$bg-light-gray: #f5f5f5;
+$heading-color: #333;
+$text-color: #444;
+$facebook: #3B5997;
+$twitter: #29C5F6;
+$google: #D03C2E;
+body{
+  height:650px;
+  position:relative;
+}
+.demo-preview{
+  position:absolute;
+  width:100%;
+  top:50%;
+  transform:translate(0,-50%);
+  -webkit-transform:translate(0,-50%);
+}
+.product-image-section {
+    .img-product-wrapper {
+        margin-bottom: 20px;
+        position: relative;
+        .slimScrollDiv {
+            min-height: 490px;
+            float: left;
+        }
+        .slim-scroll {
+            padding: 2px 20px 2px 2px;
+            min-height: 490px;
+        }
+        .img-thumbs {
+            width: 15%;
+            float: left;
+            padding-right: 10px;
+            padding-left: 2px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            .item {
+                margin-bottom: 5px;
+                border: 1px solid #CCC;
+                position: relative;
+                height:60px;
+                margin-bottom:10px;
+                &.active {
+                    border-color: transparent;
+                    outline: 2px solid $brand-primary;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 100%;
+                        top: 50%;
+                        margin-top: -5px;
+                        margin-left: 3px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 5px 0 5px 5px;
+                        border-color: transparent transparent transparent $brand-primary;
+                    }
+                }
+              a{
+                display:block;
+                width:100%;
+                height:100%;
+                overflow:hidden;
+                position:relative;
+                img{
+                  position:absolute;
+                  height:100%;
+                  width:auto;
+                  max-width:initial;
+                  left:50%;
+                  top:0;
+                  transform:translate(-50%,0);
+                  -webkit-transform:translate(-50%,0);
+                  -moz-transform:translate(-50%,0);
+                }
+              }
+            }
+        }
+        .lg-img-view {
+            width: 100%;
+            padding-left: 80px;
+            float: left;
+            .inner {
+                border: 1px solid #CCC;
+                padding: 0px;
+                height:480px;
+                position:relative;
+                overflow:hidden;
+                img {
+                    display: block;
+                    position:absolute;
+                    height:100%;
+                    width:auto;
+                    left:50%;
+                    transform:translate(-50%,0);
+                    -webkit-transform:translate(-50%,0);
+                    -moz-transform:translate(-50%,0);
+                }
+            }
+        }
+        .view-desc {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 5px 15px;
+        }
+    }
+}
+
+.product-description-section {
+    .product-detail-wrapper {
+        position: relative;
+        .product-name {
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom:20px;
+        }
+        >.group {
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #CCC;
+            .rate {
+                display: inline-block;
+                line-height: 1;
+                &:before {
+                    color: $brand-secondary;
+                }
+            }
+            .rate-point {
+                display: inline-block;
+                padding-right: 20px;
+                padding-left: 20px;
+                line-height: 1;
+                strong {
+                    font-size: 18px;
+                    color: $text-color;
+                }
+            }
+            .order-count {
+                display: inline-block;
+                padding-left: 20px;
+                border-left: 1px solid #CCC;
+                line-height: 1;
+                strong {
+                    font-size: 18px;
+                    color: $text-color;
+                }
+            }
+        }
+        .price-section {
+            position: relative;
+            padding: 10px 15px;
+            background: #f5f5f5;
+            margin-bottom: 30px;
+            .price {
+                font-size: 25px;
+                color: lighten($brand-danger, 5%);
+                font-weight: 700;
+                margin-bottom: 20px;
+                display: block;
+            }
+            span {
+                display: block;
+                color: lighten($text-color,20%);
+                text-decoration: line-through;
+                font-size: 15px;
+            }
+            .sale-label {
+                position: absolute;
+                padding: 10px 15px;
+                height: 100%;
+                width: 75px;
+                line-height:150%;
+                display: none;
+                text-align: center;
+                top: 0;
+                left: 0;
+                font-weight: 700;
+                background: lighten($brand-primary, 0%);
+                color: #FFF;
+                font-size: 20px;
+            }
+            &.has-safe {
+                .sale-label {
+                    display: block;
+                }
+                .price-div {
+                    padding-left: 75px;
+                }
+            }
+        }
+        .description {
+            margin-bottom: 20px;
+          .list{
+            list-style:disc;
+            padding-left:20px;
+            li{
+              margin-bottom:10px;
+              font-size:14px;
+              color:$brand-primary;
+              span{
+                color:$text-color;
+              }
+            }
+          }
+        }
+        .btn {
+            margin-right: 10px;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            color:#FFF;
+            font-weight:400;
+            transition:all 0.4s ease;
+            -webkit-transition:all 0.4s ease;
+          i{
+            margin-right:5px;
+          }
+          &.btn-wishlist{
+            background:$brand-danger;
+            border-color:$brand-danger;
+              &:hover{
+                background:darken($brand-danger,10%);
+                border-color:darken($brand-danger,10%);
+                }
+          }
+          &.btn-add-cart{
+            background:$brand-primary;
+            border-color:$brand-primary;
+             &:hover{
+                background:darken($brand-primary,10%);
+                border-color:darken($brand-primary,10%);
+                }
+          }
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    }
+}
+.rate {
+    display: block;
+    position: relative;
+    &:before {
+        font-family: 'FontAwesome';
+        content: "\f006  \f006  \f006  \f006  \f006";
+    }
+    &:after {
+        font-family: 'FontAwesome';
+        color: #fee243;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &[data-rating="5"]:after {
+        content: "\f005  \f005  \f005  \f005  \f005";
+    }
+    &[data-rating="4.5"]:after {
+        content: "\f005  \f005  \f005  \f005  \f089";
+    }
+    &[data-rating="4"]:after {
+        content: "\f005  \f005  \f005  \f005";
+    }
+    &[data-rating="3.5"]:after {
+        content: "\f005  \f005  \f005  \f089";
+    }
+    &[data-rating="3"]:after {
+        content: "\f005  \f005  \f005";
+    }
+    &[data-rating="2.5"]:after {
+        content: "\f005  \f005  \f089";
+    }
+    &[data-rating="2"]:after {
+        content: "\f005  \f005";
+    }
+    &[data-rating="1.5"]:after {
+        content: "\f005  \f089";
+    }
+    &[data-rating="1"]:after {
+        content: "\f005";
+    }
+    &[data-rating="0.5"]:after {
+        content: "\f089";
+    }
+}

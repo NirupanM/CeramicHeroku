@@ -1,0 +1,52 @@
+.detail-price-container{
+background-color: darkgrey;
+    margin-left: 62%;
+    padding-bottom: 46.7%;
+    margin-top: 2.2%;
+}
+
+.product-page-margin-bottom{
+	margin-bottom: 7%;
+}
+
+.paypal-thumbnail{
+	width: 21%;
+    margin-top: -5%;
+}
+
+.visa-thumbnail{
+	width: 12%;
+    margin-top: -5%;
+}
+.mastercard-thumbnail{
+	width: 12%;
+    margin-top: -5%;
+}
+.amex-thumbnail{
+	width: 12%;
+    margin-top: -5%;
+}
+.discover-thumbnail{
+	width: 12%;
+    margin-top: -5%;
+}
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+#image-left-arrow-container{
+margin-top: -10%;
+}
+
+#image-right-arrow-container{
+margin-top: -10%;
+right:5%;
+}
+
+#image-carousel{
+	height:350px !important;
+}
+
+	}
