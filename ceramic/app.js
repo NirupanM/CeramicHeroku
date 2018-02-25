@@ -16,7 +16,9 @@ $("#proceed-btn").click(function(){
 
 // var url = "https://nirupanm.github.io/Ceramic/checkout/form-submission.html";
 
-var url ="https://ceramiccollections.herokuapp.com/checkout/form-submission.html";
+var url = "http://localhost/ceramic/checkout/form-submission.html";
+
+//var url ="https://ceramiccollections.herokuapp.com/checkout/form-submission.html";
 window.location = url;
 window.location.replace (url);
 
@@ -134,6 +136,11 @@ var messageString = $('#name_input').val();
 $('#mail-message').val("\nCustomer Details:"+"\n"+"Name:"+$('#name_input').val()+"\n"+"Email:"+$('#email_input').val()+"\n"+"Phone:"+$('#phone_input').val()+"\n"+"Address:"+$('#address_input').val()+productString);
 
  var c_name,c_email,c_phone,c_address;
+
+// $('#name_input').val("mlkmlmk");
+// $('#email_input').val("kmkm");
+// $('#phone_input').val("3535");
+// $('#address_input').val("xsccsd");
 
 c_name = $('#name_input').val();
 c_email = $('#email_input').val();
@@ -528,8 +535,8 @@ $(".cart-section").click(function(){
 if(window.sessionStorage["itemscart"].length>0){
      //var url = "file:///C:/github/ceramic/checkout/checkout.html";
     //var url = "https://nirupanm.github.io/Ceramic/checkout/checkout.html";
-
-    var url = "https://ceramiccollections.herokuapp.com/checkout/checkout.html";
+    var url = "http://localhost/ceramic/checkout/checkout.html"
+    //var url = "https://ceramiccollections.herokuapp.com/checkout/checkout.html";
 window.location = url;
 window.location.replace (url);
     // history.pushState({}, "", "file:///C:/github/ceramic/");

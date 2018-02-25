@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>Ceramic Pots </title>
+  <title>Ceramic Collection </title>
         <link rel="stylesheet" href="main-pinterest.css">
 
 <!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -16,12 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
  
 <script src="app.js"></script>
-<script>(function(b,i,d,s){d=document;s=d.createElement('script');
-s.async=1;s.src=b;window.PayzardAccountId=i;
-// d.getElementsByTagName('head')[0].appendChild(s);
-d.getElementsByClassName('payzard')[0].appendChild(s);
-console.log(d.getElementsByClassName('payzard'));
-})("https:\/\/payzard.com\/payzard.js","acc_j46O1Uk85b5dQsRqJ8l6enbU");</script>
+
 
 </head>
 <body>
@@ -1245,6 +1240,9 @@ console.log(d.getElementsByClassName('payzard'));
 </div>
 
 
+</br>
+</br>
+</br>
 
 </body>
 </html>
