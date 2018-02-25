@@ -41,7 +41,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
                     // $total = $_POST["total-value"]; 
 
                    $sub = 0;
-                   $shipping = 8;
+                   $shipping = 10;
                    $total = 0; 
 
 //    $lineBreak = 2;
@@ -96,7 +96,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic1.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic1.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -135,7 +135,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic2.jpg" >';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic2.jpg" style="width:250px;" >';
 
         $sub = $sub + 25;
 
@@ -170,7 +170,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic3.jpg" >';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic3.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
     }
@@ -202,7 +202,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic4.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic4.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -235,7 +235,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic5.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic5.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -268,7 +268,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic6.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic6.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -302,7 +302,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic7.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic7.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -335,7 +335,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic8.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic8.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -368,7 +368,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic9.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic9.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -401,7 +401,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic10.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic10.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -434,7 +434,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic11.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic11.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -467,7 +467,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic12.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic12.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -502,7 +502,7 @@ require __DIR__ . '/PHPMailer/src/SMTP.php';
     <td></td>
     </tr>
     </table>
-        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic13.jpg">';
+        <img src="https://nirupanm.github.io/Ceramic/ceramicphotos/pic13.jpg" style="width:250px;">';
 
         $sub = $sub + 25;
 
@@ -732,12 +732,16 @@ try {
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
+    <th></th>
     </tr>
     <tr>
-    <td><h3>Subtotal:                                             '.$sub.'</h3></td>
+    <td><h3>Subtotal: </h3></td>
     <td></td>
     <td> </td>
     <td> </td>
+    <td></td>
+     <td><div style="margin-left:280%;">$'.$sub.'.00</div> </td>
     </tr>
     <tr>
     <td></td>
@@ -768,10 +772,12 @@ try {
     <th></th>
     </tr>
     <tr>    
-    <td><h3>Shipping:                                               '.$shipping.'</h3></td>
+    <td><h3>Shipping:  </h3></td>
     <td></td>
     <td> </td>
     <td> </td>
+    <td></td>
+    <td><div style="margin-left:280%;">$'.$shipping.'.00</div> </td>
     </tr>
     <tr>
     <td></td>
@@ -802,10 +808,12 @@ try {
     <th></th>
     </tr>
     <tr>
-    <td><h2>Total:                                                    '.$total.'</h2></td>
+    <td><h3>Total: </h3></td>
     <td></td>
     <td> </td>
     <td> </td>
+    <td></td>
+    <td><div style="margin-left:280%;">$'.$total.'.00</div> </td>
     </tr>
     <tr>
     <td></td>
